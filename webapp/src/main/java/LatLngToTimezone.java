@@ -7,9 +7,6 @@ import java.util.Optional;
 import java.util.TimeZone;
 import java.util.function.Function;
 
-/**
- * Created by s.sreenivasan on 2/12/2016.
- */
 public class LatLngToTimezone implements Function<LatLng,Optional<TimeZone>> {
 
     private static final String API_KEY = "AIzaSyApVcklJpPOvIP5pa8IaUcWG6AtEaSnMNI";

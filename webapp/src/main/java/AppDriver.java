@@ -50,7 +50,7 @@ public class AppDriver {
                 return "Invalid input";
             }
             LocalDateTime localDateTime = getLocalDateFromUtc(dateTime);
-            String formattedLocalDateTime = localDateTime.toString().replace("T"," ");
+            String formattedLocalDateTime = localDateTime.toString();
             final String output = input.concat(",").concat(timeZone.get().getID()).concat(",").concat(formattedLocalDateTime);
             return output;
         }).collect(Collectors.toList());
